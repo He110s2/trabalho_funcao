@@ -1,0 +1,15 @@
+def calcular_desconto(preco, percentual_desconto):
+    desconto = preco * (percentual_desconto / 100)
+    preco_final = preco - desconto
+    return desconto, preco_final
+    
+preco = float(input("Digite o preço da mercadoria: R$ "))
+percentual_desconto = float(input("Digite o percentual de desconto: "))
+
+desconto = preco * (percentual_desconto / 100)
+preco_final = preco - desconto
+
+desconto, preco_final = calcular_desconto(preco, percentual_desconto)
+
+print("Valor do desconto: ", desconto)
+print("Preço a pagar: ", preco_final)

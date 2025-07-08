@@ -4,7 +4,7 @@ def calcular_aumento(salario, percentual):
     return aumento, novo_salario
 
 
-salario_atual = float(input("Digite o valor do salário atual: R$ "))
+salario_atual = float(input("Digite o valor do salário atual: "))
 percentual_aumento = float(input("Digite a porcentagem de aumento: "))
 
 aumento, novo_salario = calcular_aumento(salario_atual, percentual_aumento)

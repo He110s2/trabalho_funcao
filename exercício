@@ -1,0 +1,11 @@
+def calcular_preco_aluguel(km_percorridos, dias_aluguel):
+    preco_diario = 60
+    preco_por_km = 0.15
+    preco_total = (dias_aluguel * preco_diario) + (km_percorridos * preco_por_km)
+    return preco_total
+
+km_percorridos = float(input("Digite a quantidade de km percorridos: "))
+dias_aluguel = int(input("Digite a quantidade de dias de aluguel: "))
+preco_total = calcular_preco_aluguel(km_percorridos, dias_aluguel)
+
+print("O preço total a pagar é: ", preco_total )
